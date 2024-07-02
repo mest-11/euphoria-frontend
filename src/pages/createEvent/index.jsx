@@ -1,6 +1,10 @@
 const CreateEvent = () => {
   return (
-    <div>CreateEvent</div>
+    <div>
+
+      <h1>Create New Event</h1>
+    </div>
+
   )
 }
 
