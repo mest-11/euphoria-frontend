@@ -10,6 +10,6 @@ import SummitImg from "./images/summitImg.jpg"
 import Youth from "./images/youthImg.jpg"
 import Kingdom from "./images/kingdom.webp"
 import Festival from "./images/festivalImg.jpg"
-import Books from "./images/f"
+import Books from "./images/booksImg.jpg"
 
-export {Icon, Flier, Logo, HeroImg2, Celebrate, ProjectImg, Queens, Geek, SummitImg, Youth, Kingdom, Festival}
+export {Icon, Flier, Logo, HeroImg2, Celebrate, ProjectImg, Queens, Geek, SummitImg, Youth, Kingdom, Festival, Books}
