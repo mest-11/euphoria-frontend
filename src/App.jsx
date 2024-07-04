@@ -6,6 +6,7 @@ import ManageEvent from "./pages/manageEvent";
 import SearchDisplay from "./pages/searchDisplay";
 import CreateEvent from "./pages/createEvent";
 import Events from "./pages/eventsDisplay/events";
+import './App.css'
 
 
 const router =createBrowserRouter (

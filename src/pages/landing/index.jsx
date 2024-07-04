@@ -2,7 +2,14 @@
 
 import NavBar from "../../components/navBar"
 import SearchBar from "../../components/searchBar"
-import { HeroImg2 } from "../../assets"
+
+import Footer from "../../components/footer"
+
+import Section2 from "./components/section2"
+import Section3 from "./components/section3"
+
+
+
 
 
 const Landing = () => {
@@ -14,8 +21,17 @@ const Landing = () => {
       <div className="flex flex-col justify-center items-center pt-60">
         <SearchBar />
 
-        <img src={HeroImg2} alt="hero image" className="" />
+        
+        
       </div>
+
+      <Section2/>
+
+      <Section3/>
+      
+
+
+      
 
 
 
