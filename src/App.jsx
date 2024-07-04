@@ -5,6 +5,7 @@ import DashBoard from "./pages/dashboard";
 import ManageEvent from "./pages/manageEvent";
 import SearchDisplay from "./pages/searchDisplay";
 import CreateEvent from "./pages/createEvent";
+import Events from "./pages/eventsDisplay/events";
 
 
 const router =createBrowserRouter (
@@ -37,6 +38,10 @@ const router =createBrowserRouter (
       path: "create/event",
       element: <CreateEvent/>
     },
+    {
+      path: "all/events",
+      element: <Events/>
+    }
 
     
 

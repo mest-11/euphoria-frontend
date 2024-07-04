@@ -6,17 +6,17 @@ const DashBoardNavBar = () => {
             
             
 
-            <div className="flex  px-10">
+            <div className="flex   p-4 fixed w-full">
             <img src={Icon} alt="Logo" className="h-[40px]" />
                 <div className="flex flex-1 justify-end gap-8">
                     
-                    <div className="flex items-center gap-9">
-                        <a className="text-sm font-medium leading-normal" href="">Home</a>
-                        <a className="text-sm font-medium leading-normal" href="">Events</a>
-                        <a className=" text-sm font-medium leading-normal" href="">Create Event</a>
-                        <a className=" text-sm font-medium leading-normal" href="">Manage</a>
-                        <Bell className="size-[20px]"/>
-                        <img src="" alt="profile img" />
+                    <div className="flex items-center gap-9 text-deepBlue">
+                        <a className="text-[16px] font-medium leading-normal" href="/">Home</a>
+                        <a className="text-[16px] font-medium leading-normal" href="">Events</a>
+                        <a className=" text-[16px] font-medium leading-normal" href="">Create Event</a>
+                        <a className=" text-[16px] font-medium leading-normal" href="">Manage</a>
+                        <Bell className="size-[20px] animate-bounce"/>
+                        <img src="" alt="profile img "  className="rounded-full size-10 bg-black"/>
                     </div>
 
                 </div>
