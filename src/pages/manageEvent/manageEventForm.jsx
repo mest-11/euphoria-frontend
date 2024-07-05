@@ -3,7 +3,7 @@ import './ManageEvent.css';
 
 const ManageEvent = () => {
     const [events, setEvents] = useState([]);
-    const [newEvent, setNewEvent] = useState('');
+    // const [newEvent, setNewEvent] = useState('');
 
     const addEvent = () => {
         setEvents([...events, { id: events.length + 1, name: newEvent }]);
