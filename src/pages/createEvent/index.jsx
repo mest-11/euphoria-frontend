@@ -25,7 +25,7 @@ const CreateEvent = () => {
               <div className="flex max-w-[480px] flex-1 flex-wrap items-center place-content-center gap-4 px-4 py-3">
                 <label className="flex flex-col min-w-40 flex-1 text-[#141C24] text-base font-medium leading-normal pb-2">
                   Event Name</label>
-                <input type="text" className=" form-input flex w-60 flex-1 resize-none overflow-hidden rounded-xl text-[#141C24] focus:outline-0 focus:ring-0 border-[2px] border-yellow-500 h-20" placeholder="Enter event name" id="name" name="eventName"/>
+                <input type="text" className=" form-input flex w-60 flex-1 resize-none overflow-hidden rounded-xl text-[#141C24] focus:outline-0 focus:ring-0 border-[2px] border-yellow-500 h-10" placeholder="Enter event name" id="name" name="eventName"/>
 
               </div>
 
@@ -45,7 +45,7 @@ const CreateEvent = () => {
                     Price*
                   </label>
 
-                    <select className="form-input flex w-60 min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#141C24] focus:outline-0 focus:ring-0 border-[2px] border-yellow-500 h-8" placeholder="" id="price" name="price" >
+                    <select className="form-input flex w-60 min-w-[40px] flex-1 resize-none overflow-hidden rounded-xl text-[#141C24] focus:outline-0 focus:ring-0 border-[2px] border-yellow-500 h-8" placeholder="" id="price" name="price" >
                       <option></option>
                       <option>$10</option>
                       <option>$20</option>
