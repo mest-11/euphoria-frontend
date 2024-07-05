@@ -8,9 +8,9 @@ const NavBar = () => {
     <div>
                     
 
-    <div className="flex py-5  px-10 fixed w-full">
-    <img src={Logo} alt="Logo" className="h-[60px] w-[100px]" />
-        <div className="flex flex-1 justify-end gap-8">
+    <div className="flex py-5  px-10 fixed w-full bg-white">
+<img src={Logo} alt="Logo" className="h-[60px] w-[100px]" />
+        <div className="flex flex-1 justify-end gap-8">    
             
             <div className="flex items-center gap-9 text-deepBlue">
                 <a className="text-[16px] font-medium leading-normal" href="/">Home</a>

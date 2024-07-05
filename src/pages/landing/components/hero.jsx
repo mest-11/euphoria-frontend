@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -7,10 +7,21 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import './styles.css';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
+
+const imageUrls = [
+
+  '../../../assets/images/images6.jpg',
+  '../../../assets/images/images1.jpg',
+  '../../../assets/images/images2.jpg',
+  '../../../assets/images/images3.jpg',
+  '../../../assets/images/images4.jpg',
+  '../../../assets/images/images5.jpg',
+  '../../../assets/images/images7.jpg'
+  
+];
 
 export default function App() {
   return (
@@ -23,15 +34,11 @@ export default function App() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {imageUrls.map((url, index) => (
+          <SwiperSlide key={index}>
+            <img src={url} alt={`Slide ${index + 1}`} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );

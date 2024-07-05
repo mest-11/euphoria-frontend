@@ -11,5 +11,18 @@ import Youth from "./images/youthImg.jpg"
 import Kingdom from "./images/kingdom.webp"
 import Festival from "./images/festivalImg.jpg"
 import Books from "./images/booksImg.jpg"
+import Entertainment from "./images/Entertainment.jpg"
+import Hero1 from "./images/audience.jpg"
+import Image1 from "./images/image1.jpg"
+import Image2 from "./images/image2.jpg"
+import Image3 from "./images/images3.jpg"
+import Image4 from "./images/image4.jpg"
+import Image5 from "./images/images5.jpg"
+import Image6 from "./images/images6.jpg"
+import Image7 from "./images/image7.jpg"
+import Concert from "./images/concert.jpg"
 
-export {Icon, Flier, Logo, HeroImg2, Celebrate, ProjectImg, Queens, Geek, SummitImg, Youth, Kingdom, Festival, Books}
+import Laugh from "./images/laughs.webp"
+import BeastImg from "./images/beastImg.jpeg"
+
+export {Icon, Flier, Logo, HeroImg2, Celebrate, ProjectImg, Queens, Geek, SummitImg, Youth, Kingdom, Festival, Books, BeastImg, Laugh, Entertainment, Hero1, Image1, Image2, Image3, Image4, Image5, Image6, Image7, Concert}
