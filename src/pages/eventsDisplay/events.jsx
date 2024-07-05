@@ -1,7 +1,35 @@
 import AllEventsCard from "../../components/allEventsCard"
 import NavBar from "../../components/navBar"
-
+import { Festival } from "../../assets"
+import { Geek } from "../../assets"
+import { Entertainment } from "../../assets"
+import { Books } from "../../assets"
+import { BeastImg } from "../../assets"
+import { Queens } from "../../assets"
+import { ProjectImg } from "../../assets"
+import { Kingdom } from "../../assets"
+import { SummitImg } from "../../assets"
+import { useEffect, useState } from "react"
+import axios from "axios"
+import EventCard from "../../components/eventCard"
 const Events = () => {
+
+  const [events, setEvents] = useState([]);
+
+  //Define a function to fetch events
+  const getEvents = async () => {
+    const response =await axios.get('https://euphoria-backend-1.onrender.com/events');
+    if (response.status == 200) {
+      console.log(response)
+      setEvents(response.data);
+    } else {
+      setEvents([]);
+    }
+  }
+  // Get events
+  useEffect(() => {
+    getEvents();
+  }, []);
   return (
     <div>
       <NavBar />
@@ -9,51 +37,28 @@ const Events = () => {
         <span className="flex flex-col justify-center items-center text-[25px] font-medium ">
           All Events
         </span>
-        <div className=" flex flex-wrap justify-center items-center gap-x-10 gap-y-10">
-          <AllEventsCard
-            eventName={'House Party'}
-            discription={'slumber party at best rht uyiy bgng tuu '}
-            price={'$100'}
-            location={'Mile 7'}
-            date={'11/04/2024'} />
+        
+        <div className=" grid grid-cols-4 gap-4">
+        {events.map(event => (
+          <div className=" grid grid-cols-4 ">
 
-          <AllEventsCard
-            eventName={'House Party'}
-            discription={'slumber party at best rht uyiy bgng tuu '}
-            price={'$100'}
-            location={'Mile 7'}
-            date={'11/04/2024'} />
-
-          <AllEventsCard
-            eventName={'House Party'}
-            discription={'slumber party at best rht uyiy bgng tuu '}
-            price={'$100'}
-            location={'Mile 7'}
-            date={'11/04/2024'} />
-
-          <AllEventsCard
-            eventName={'House Party'}
-            discription={'slumber party at best rht uyiy bgng tuu '}
-            price={'$100'}
-            location={'Mile 7'}
-            date={'11/04/2024'} />
-
-          <AllEventsCard
-            eventName={'House Party'}
-            discription={'slumber party at best rht uyiy bgng tuu '}
-            price={'$100'}
-            location={'Mile 7'}
-            date={'11/04/2024'} />
-
-          <AllEventsCard
-            eventName={'House Party'}
-            discription={'slumber party at best rht uyiy bgng tuu '}
-            price={'$100'}
-            location={'Mile 7'}
-            date={'11/04/2024'} />
+            
+            <AllEventsCard
+            flier={`https://savefiles.org/${event.flier}?shareable_link=288`}
+            eventName={event.eventName}
+            discription={event.description}
+            date={event.date}
+            location={event.location}
+            price={event.price}
+          />
+ </div>
+          ))}
+          
+        </div>
+       
         </div>
 
-      </div>
+     
 
     </div>
   )
